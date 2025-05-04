@@ -20,17 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://example.com/categories/index.html">
+  <meta name="description" content="References  https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next&#x2F;blob&#x2F;master&#x2F;docs&#x2F;zh-CN&#x2F;MATH.md https:&#x2F;&#x2F;www.philoli.com&#x2F;building-a-blog-from-scratch&#x2F; https:&#x2F;&#x2F;vic.kim&#x2F;2019&#x2F;05&#x2F;25&#x2F;Hexo博客优化之Next主题美化&#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Exponential Moving Averages in Deep Learning">
+<meta property="og:url" content="http://example.com/2025/02/12/ema_for_dl/index.html">
 <meta property="og:site_name" content="Dreamer&#39;s Land">
+<meta property="og:description" content="References  https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next&#x2F;blob&#x2F;master&#x2F;docs&#x2F;zh-CN&#x2F;MATH.md https:&#x2F;&#x2F;www.philoli.com&#x2F;building-a-blog-from-scratch&#x2F; https:&#x2F;&#x2F;vic.kim&#x2F;2019&#x2F;05&#x2F;25&#x2F;Hexo博客优化之Next主题美化&#x2F;">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-11-22T02:35:26.000Z">
-<meta property="article:modified_time" content="2024-11-22T02:54:28.820Z">
+<meta property="article:published_time" content="2025-02-12T16:13:42.028Z">
+<meta property="article:modified_time" content="2025-02-12T16:14:32.826Z">
 <meta property="article:author" content="Y.Z. Daneel">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/categories/">
+<link rel="canonical" href="http://example.com/2025/02/12/ema_for_dl/">
 
 
 <script id="page-configurations">
@@ -38,13 +40,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>categories | Dreamer's Land
-</title>
+  <title>Exponential Moving Averages in Deep Learning | Dreamer's Land</title>
   
 
 
@@ -152,51 +153,94 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page posts-expand">
+          <div class="content post posts-expand">
             
 
     
-    
-    
-    <div class="post-block" lang="en">
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/12/ema_for_dl/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Y.Z. Daneel">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dreamer's Land">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Exponential Moving Averages in Deep Learning
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">categories
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
 
-<div class="post-meta">
+              <time title="Created: 2025-02-12 11:13:42 / Modified: 11:14:32" itemprop="dateCreated datePublished" datetime="2025-02-12T11:13:42-05:00">2025-02-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/DL-Heuristics/" itemprop="url" rel="index"><span itemprop="name">DL Heuristics</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h3 id="references"><a class="markdownIt-Anchor" href="#references"></a> References</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/MATH.md">https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/MATH.md</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.philoli.com/building-a-blog-from-scratch/">https://www.philoli.com/building-a-blog-from-scratch/</a></li>
+<li><a target="_blank" rel="noopener" href="https://vic.kim/2019/05/25/Hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E4%B9%8BNext%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/">https://vic.kim/2019/05/25/Hexo博客优化之Next主题美化/</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2024/11/21/hexo_math_rendering/" rel="prev" title="Useful references to render latex expressions in markdown with hexo">
+      <i class="fa fa-chevron-left"></i> Useful references to render latex expressions in markdown with hexo
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          <div class="category-all-page">
-            <div class="category-all-title">
-              3 categories in total
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/DL-Heuristics/">DL Heuristics</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Generative-models/">Generative models</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo-tricks/">Hexo tricks</a><span class="category-list-count">1</span></li></ul>
-            </div>
-          </div>
-        
-      </div>
-      
-      
-      
-    </div>
-    
-
-    
-    
-    
 
 
           </div>
@@ -247,6 +291,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#references"><span class="nav-number">1.</span> <span class="nav-text"> References</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
