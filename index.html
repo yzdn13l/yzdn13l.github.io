@@ -181,7 +181,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2025-05-10 22:06:16 / Modified: 22:07:56" itemprop="dateCreated datePublished" datetime="2025-05-10T22:06:16-04:00">2025-05-10</time>
+              <time title="Created: 2025-05-10 22:06:16 / Modified: 22:20:57" itemprop="dateCreated datePublished" datetime="2025-05-10T22:06:16-04:00">2025-05-10</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -205,17 +205,17 @@
 
       
           <p>Checkout/create orphan branch (this branch won’t show in git branch command):</p>
-<p><code>git checkout --orphan latest_branch</code></p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout <span class="comment">--orphan latest_branch</span></span><br></pre></td></tr></table></figure>
 <p>Add all the files to the newly created branch:</p>
-<p><code>git add -A</code></p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">add</span> -A</span><br></pre></td></tr></table></figure>
 <p>Commit the changes:</p>
-<p><code>git commit -am &quot;commit message&quot;</code></p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git</span> commit -am <span class="string">&quot;commit message&quot;</span></span><br></pre></td></tr></table></figure>
 <p>Delete main (default) branch (this step is permanent):</p>
-<p><code>git branch -D main</code></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -D <span class="selector-tag">main</span></span><br></pre></td></tr></table></figure>
 <p>Rename the current branch to main:</p>
-<p><code>git branch -m main</code></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -m <span class="selector-tag">main</span></span><br></pre></td></tr></table></figure>
 <p>Finally, all changes are completed on your local repository, and force update your remote repository:</p>
-<p><code>git push -f origin main</code></p>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">push</span> -f <span class="built_in">origin</span> main</span><br></pre></td></tr></table></figure>
 <h3 id="reference"><a class="markdownIt-Anchor" href="#reference"></a> Reference</h3>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/13716658/how-to-delete-all-commit-history-in-github">Stack Overflow: how-to-delete-all-commit-history-in-github</a></li>
